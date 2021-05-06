@@ -1,0 +1,57 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+    font-family: monospace; display:inline; 
+}
+
+h2, h3, h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+header {
+    float: left; display: inline; background-color: rgba(105, 92, 92, 0.562); position: sticky; width:100%;
+}
+header::after {
+    clear:both
+}
+.section1, .section2, .section3 {
+     width: 33%; float:left; 
+}
+
+.section1 {
+    background-color: lightblue;
+}
+.section2 {
+    background-color: lightpink;
+}
+.section3 {
+    background-color: lightgreen;
+}
+
+.section4 {
+    background-color:lightgray; clear:both;
+}
+.searchbar {
+    float:right
+}
+.meny {
+    float:right; cursor:pointer;
+}
+
+input.searchbar {
+    font-family: Arial, Helvetica, sans-serif; font-size:20px; background-color:rgba(245, 240, 240, 0.562); color:rgba(37, 31, 31, 0.562)
+}
+
+a, a:visited {
+    color:blue
+}
+
+a:active, a:hover {
+    color: limegreen
+}
+
+main {
+    width:75%
+}
