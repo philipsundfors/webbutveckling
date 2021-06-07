@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Quiz | Webbsidan om datorer</title>
+        <meta charset="utf-8">
+        <link href="../css/style.css" type="text/css" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html"><img src="../bilder/logotyp.png" alt="logo" width="60"> Webbsidan om datorer</a></h1> <img src="../bilder/meny.png" alt="meny" id="meny" class="meny" title="meny" width="65"><div class="searchbar" title="Sök på sidan"><input type="text" id="search" name="search" length="10" class="searchbar"><input type="submit" value="sök" class="searchbar"></div>
+        </header>
+        <main>
+            <h1 class="page-title">Quiz</h1><br>
+            <noscript style="color:red">JavaScript är inaktiverat i din webbläsare eller så använder du en webbläsare som inte stöder JavaScript. För att kunna spela detta spel måste JavaScript vara aktiverat i din webbläsare. Stöder inte din webbläsare JavaScript så behöver du byta till en webbläsare som stöder JavaScript. De populäraste webbläsarna stöder JavaScript. <b><a href="http://enable-javascript.com" target="_blank" title="Länken öppnas i ett nytt fönster">Hjälp med att aktivera JavaScript</a></b></noscript>
+            <h2>Spelinstruktioner</h2>
+            <ul>
+                <li>Skriv ditt användarnamn i rutan nedan. Detta visas i resultattavlan på topplistan om du lyckas ta dig in på den. Om namnet innehåller olämpliga ord kommer det att stå ”Gäst” vid dina poäng.</li>
+                <li>Välj svårighetsgrad. Lättare svårighetsgrad gör så att du får mindre poäng, men kan svara fler gånger fel samt att du får mer tid på dig att svara. Spelar du på den svåraste svårighetsgraden får du svara fel bara en gång och du får lite tid på dig att svara. Spelar du på lättaste svårighetsgraden har du obegränsat med tid men kan svara fel flera gånger innan spelet tar slut.</li>
+                <li>När du är redo klickar du på Start.</li>
+                <li>För hjälp, tryck på länken "Hjälp" under spelskärmen.</li>
+                <li>Lycka till!</li>
+            </ul>
+            <fieldset>
+                <legend>Användarnamn och svårighetsgrad:</legend>
+                <p>Fält markerade med en * är obligatoriska</p>
+                <label for="uname">Användarnamn*:</label>
+                <input type="text" id="uname" name="uname" minlength="4" maxlength="15" required size="15" placeholder="Användarnamn"><br>
+                <label for="difficulty">Svårighetsgrad*:</label>
+                <select required name="difficulty">
+                <option value="select" selected name="select">Välj svårighetsgrad</option>
+                <option value="easy" name="easy">Lätt</option>
+                <option value="medium" name="medium">Medel</option>
+                <option value="hard" name="hard">Svår</option>
+                </select><br>
+                <input type="checkbox" name="solo"><label for="solo">Jag vill inte att mina poäng ska sparas på resultatlistan</label><br>
+                <input type="checkbox" name="rules" required><label for="rules">Jag har läst reglerna och hur frågesporten går till*.</label><br>
+                <p>När du känner dig redo trycker du på START-knappen.</p>
+                <input type="submit" value="START" class="startbutton">
+              </fieldset>
+              <iframe src="quizquestions.html" height="500" width="900" title="Frågor" style="border:none;" allowfullscreen="true" name="Frågor"></iframe>
+
+        </main>
+    </body>
+</html>
